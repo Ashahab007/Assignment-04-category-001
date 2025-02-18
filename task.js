@@ -31,14 +31,14 @@ function cashOut(money) {
   if (typeof money === "number" && money >= 0) {
     let charge = 1.75 / 100;
     let cashOutCharge = money * charge;
-    return cashOutCharge;
+    return `Cash out charge ${cashOutCharge}`;
   } else {
     return "Invalid";
   }
   console.log(money);
 }
 
-let charge = cashOut("mewauu");
+let charge = cashOut(999);
 console.log(charge);
 
 // !Problem-02 :
